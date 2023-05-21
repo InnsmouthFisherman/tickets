@@ -6,7 +6,7 @@ public class Ticket {
     String time;
     public static class ATicket extends Ticket{
 
-        public ATicket(char type){
+        public ATicket(char type, double id){
             this.date = "7.00 1 июня";
             this.time = "4 часа 30 минут";
             if (type == 'c') {
@@ -17,11 +17,10 @@ public class Ticket {
                 this.price = 70;
             }
         }
-
     }
     public static class ZTicket extends Ticket{
 
-        public ZTicket(char type){
+        public ZTicket(char type, double id){
             this.date = "8.00 12 августа";
             this.time = "14 часов 30 минут";
             if (type == 'c') {
@@ -32,10 +31,9 @@ public class Ticket {
                 this.price = 100;
             }
         }
-
     }
     public static class UTicket extends Ticket{
-        public UTicket(char type){
+        public UTicket(char type, double id){
             this.date = "10.30 10 июня";
             this.time = "7 часов";
             if (type == 'c') {
@@ -46,6 +44,5 @@ public class Ticket {
                 this.price = 60;
             }
         }
-
     }
 }
